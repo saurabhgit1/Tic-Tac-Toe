@@ -128,7 +128,9 @@ export default function Game() {
 
 // Lifting state into a parent component is common when React components are refactored.
 
-// setters of useState are async - you won't get updated value just after setValue
+// setters of useState are async - you won't get updated value just after setValue, 
+// when component will re render then you will get updated value
+// you can make it sync using callback
 
 function calculateWinner(squares) {
   const lines = [
